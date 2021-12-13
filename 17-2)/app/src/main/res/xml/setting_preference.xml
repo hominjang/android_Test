@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="메세지 알림">
+        <SwitchPreference
+            android:key="message"
+            android:summary="소리라는게 사실 일본에서 온거거든요"
+            android:title="소리 알림" />
+
+        <CheckBoxPreference
+            android:key="vibrate"
+            android:summary="진동은 100%입니다!"
+            android:title="진동 알림" />
+
+        <EditTextPreference
+            android:dialogTitle="어디한번 적어보시죠"
+            android:key="nickname"
+            android:summary="할말이 있습니까? 휴면 클릭해보세요"
+            android:title="할말" />
+
+        <ListPreference
+            android:entries="@array/array_voice"
+            android:entryValues="@array/array_voice"
+            android:key="keyword_sound_list"
+            android:summary="소리들이 아주 많습니다."
+            android:title="소리 한개 설정" />
+
+        <MultiSelectListPreference
+            android:entries="@array/array_voice"
+            android:entryValues="@array/array_voice"
+            android:key="keyword_sounds_list"
+            android:summary="소리들이 아주 많습니다."
+            android:title="소리 여러개 설정" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="디버깅">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="debugging"
+            android:summary="디버깅 연결된 경우 디버깅 사용"
+            android:title="USB 디버깅" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="debugging"
+            android:key="vibrate"
+            android:summary="진동은 100%입니다!"
+            android:title="진동 알림" />
+
+    </PreferenceCategory>
+
+    <PreferenceScreen android:title="이동통신망">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="roaming"
+            android:summary="로밍할때 데이터 연결"
+            android:title="데이터 로밍" />
+        <SwitchPreference
+
+            android:key="LTE_mode"
+            android:summary="LTE 서비스를 사용하여 음성 및 기타 통신을 개선할 수 있습니다."
+            android:title="향상된 LTE 모드" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="이동통신망"
+        android:summary="함 눌러봐!">
+        <intent android:targetPackage="com.example.preferencefragment"
+            android:targetClass="com.example.preferencefragment.SecondFragment"/>
+        </PreferenceScreen>
+
+</PreferenceScreen>
