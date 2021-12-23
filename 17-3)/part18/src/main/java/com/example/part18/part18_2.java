@@ -71,8 +71,8 @@ public class part18_2 extends AppCompatActivity {
         mypagerAdapter.addFragment(firstFragment);
         mypagerAdapter.addFragment(secondFragment);
         viewPager2.setAdapter(mypagerAdapter);
-        final List<String> tabElement = Arrays.asList("여기저기","저기여기");
 
+        final List<String> tabElement = Arrays.asList("여기저기","저기여기");
         new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
             // 인자들을 보면 첫번째는 tablayout
             // 두번째는 viewpagers
