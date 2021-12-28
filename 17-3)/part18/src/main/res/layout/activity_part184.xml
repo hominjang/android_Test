@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/part18_4_coordinator"
+    tools:context=".part18_4">
+
+    <Button
+        android:id="@+id/part18_4_modal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modal Bootom Sheet"></Button>
+
+
+    <LinearLayout
+        android:id="@+id/part18_4_bottom_shit"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#ebebeb"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="120dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persistent bottom sheet"
+            android:textColor="#DF000000"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Persistent bottom sheet art an itnetgtak part of 어쩌고 저쩌고"
+            android:textColor="#8B000000"
+            android:textSize="16dp"></TextView>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
