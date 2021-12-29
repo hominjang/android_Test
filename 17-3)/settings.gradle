@@ -1,3 +1,4 @@
 rootProject.name = "ViewPager"
 include ':app'
 include ':part18'
+include ':part19'
