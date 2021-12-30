@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity{
         if (requestCode == 100 && grantResults.length > 0) {
             if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
 
-                Toast toast = Toast.makeText(this, "no permission", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(this, "yes permission", Toast.LENGTH_SHORT);
                 toast.show();
             }
         }
